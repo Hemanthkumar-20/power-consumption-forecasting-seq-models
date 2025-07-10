@@ -1,44 +1,61 @@
-# Household Power Consumption Forecasting Sequential Models
+# ⚡ Household Power Consumption Forecasting with Sequential Models
 
-This project focuses on forecasting household power consumption using a variety of Sequential modeled architectures. We compare the performance of several deep learning models on time series data, including:
+This project focuses on forecasting household power consumption using a variety of sequential deep learning architectures. We compare the performance of several models on time series data:
 
-- Vanilla RNN
-- Stacked RNN
-- Gated Recurrent Unit (GRU)
-- Vanilla LSTM
-- Stacked LSTM
-- Bidirectional LSTM (BiLSTM)
-- Refined LSTM (custom-enhanced LSTM variant)
+- Vanilla RNN  
+- Stacked RNN  
+- Gated Recurrent Unit (GRU)  
+- Vanilla LSTM  
+- Stacked LSTM  
+- Bidirectional LSTM (BiLSTM)  
+- Refined LSTM (custom-enhanced LSTM variant)  
 
 ---
 
 ## 📊 Dataset
 
-We used the **Household Power Consumption Dataset**, which contains measurements of electric power consumption in a single household over four years (2006-2010).  
-**Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
+We use the **Household Power Consumption Dataset**, which contains minute-level measurements of electric power consumption in a single household over a four-year period (2006–2010).
+
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
+- **File Name**: `household_power_consumption.txt`  
 
 ---
 
 ## 🧠 Models Implemented
 
-Each model was built and trained using TensorFlow/Keras. The architecture details vary in depth and configuration:
+Each model was built and trained using **TensorFlow/Keras**. The models vary in depth and architectural style:
 
-- **Vanilla RNN** – basic recurrent unit.
-- **Stacked RNN** – multiple RNN layers.
-- **GRU** – efficient gated recurrent unit.
-- **Vanilla LSTM** – traditional LSTM cell.
-- **Stacked LSTM** – deeper LSTM networks.
-- **BiLSTM** – bidirectional processing for richer context.
-- **Refined LSTM** – LSTM variant with architectural tweaks for better performance.
+- **Vanilla RNN** – Basic recurrent unit  
+- **Stacked RNN** – Multi-layer RNN for deeper learning  
+- **GRU** – Gated Recurrent Unit for efficient training  
+- **Vanilla LSTM** – Standard LSTM cell  
+- **Stacked LSTM** – Multi-layer LSTM for capturing deeper dependencies  
+- **BiLSTM** – Bidirectional LSTM for richer temporal context  
+- **Refined LSTM** – LSTM with architectural enhancements (e.g., dropout, attention)
 
 ---
 
 ## 📈 Evaluation Metrics
 
-We used the following metrics to evaluate model performance:
+Models are evaluated using the following metrics:
 
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- Mean Squared Error (MSE)
+- **MAE** – Mean Absolute Error  
+- **MSE** – Mean Squared Error  
+- **RMSE** – Root Mean Squared Error  
 
+---
 
+## 🧪 How to Run the Project
+
+### ✅ Prerequisites
+
+Ensure the following are installed:
+
+- Python 3.7+
+- Jupyter Notebook
+- Required libraries: TensorFlow, NumPy, Pandas, Matplotlib, Scikit-learn
+
+Install them using:
+
+```bash
+pip install tensorflow pandas matplotlib scikit-learn
