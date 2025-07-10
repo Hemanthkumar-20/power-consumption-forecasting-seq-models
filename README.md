@@ -59,3 +59,6 @@ Install them using:
 
 ```bash
 pip install tensorflow pandas matplotlib scikit-learn
+
+Now open the Jupyter Notebook and add the Dataset
+Now open ipybn file and run each cell
