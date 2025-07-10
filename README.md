@@ -41,7 +41,4 @@ We used the following metrics to evaluate model performance:
 - Root Mean Squared Error (RMSE)
 - Mean Squared Error (MSE)
 
----
-
-## 📂 Folder Structure
 
