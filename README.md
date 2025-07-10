@@ -31,7 +31,7 @@ Each model was built and trained using **TensorFlow/Keras**. The models vary in 
 - **Vanilla LSTM** – Standard LSTM cell  
 - **Stacked LSTM** – Multi-layer LSTM for capturing deeper dependencies  
 - **BiLSTM** – Bidirectional LSTM for richer temporal context  
-- **Refined LSTM** – LSTM with architectural enhancements (e.g., dropout, attention)
+- **Refined LSTM** – LSTM with architectural enhancements
 
 ---
 
@@ -55,10 +55,43 @@ Ensure the following are installed:
 - Jupyter Notebook
 - Required libraries: TensorFlow, NumPy, Pandas, Matplotlib, Scikit-learn
 
+After installing open jupyter notbook add the dataset and code file run each cell of notebook
+
 Install them using:
 
-```bash
+```
 pip install tensorflow pandas matplotlib scikit-learn
+```
 
-Now open the Jupyter Notebook and add the Dataset
-Now open ipybn file and run each cell
+### ▶️ After Installation
+
+Once the dependencies are installed:
+
+1. **Open Jupyter Notebook**:
+
+   ```
+   jupyter notebook
+   ```
+2. **Add Necessary Files**
+
+- Place the dataset file `household_power_consumption.txt` in the same folder as the notebook.
+- Ensure the notebook file `power_consumption_forecasting-seq_models.ipynb` is present.
+
+3. **Run the Notebook**
+
+- Open `power_consumption_forecasting-seq_models.ipynb` using the Jupyter interface.
+- Execute each cell in order to:
+   - Load and preprocess the dataset  
+   - Create training and test sets  
+   - Train all models (RNN, GRU, LSTM, BiLSTM, etc.)  
+   - Evaluate and visualize the results  
+
+## 📁 Project Structure
+
+```
+📁 household-power-forecasting/
+├── power_consumption_forecasting-seq_models.ipynb           # Main Jupyter notebook with model code
+├── household_power_consumption.txt   # Dataset file
+└── README.md                         # Project documentation
+```
+
